@@ -168,26 +168,29 @@
             {{ nav_box("mobile-only") }}
             <div class="footer">
                 <ul>
-                    <li>Copyright &copy; {{ copyright }}</li>
-                    {%- block footer_extra -%}{%- endblock -%}
+                    {%- block footer -%}{%- endblock -%}
+                </ul>
+                <ul class="jsonly preferences">
+                    <li>Available preferences:</li>
                     <li>
-                        Created using <a href="http://sphinx-doc.org">Sphinx</a>
+                        <a href="" class="preference-night">Enable night mode</a>
                     </li>
                 </ul>
                 <ul class="jsonly preferences-legal" data-click-next="">
                     <li>
-                        Preferences and caches will be saved in your computer's
-                        memory.
+                        Allow theme preference and caches to be saved to your
+                        computer's memory (cookies).
                     </li>
-                    <li><a href="#" class="preferences-legal-yes">I agree</a></li>
-                    <li><a href="#" class="preferences-legal-no">
+                    <li><a href="" class="preferences-legal-yes">I agree</a></li>
+                    <li><a href="" class="preferences-legal-no">
                         Nevermind, go back
                     </a></li>
                 </ul>
                 <ul class="nojs preferences-error">
                     <li>
-                        You need a recent browser with JavaScript enabled to edit
-                        the preferences
+                        You need a recent browser with JavaScript enabled and
+                        to allow cookies if you want to use the dark theme.
+                        No information except the theme will be stored.
                     </li>
                 </ul>
             </div>
